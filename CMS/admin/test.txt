@@ -1,0 +1,7 @@
+{
+	"admin":
+		{
+			"username": "asd@asd.asd",
+			"password": "asd"
+		}
+}

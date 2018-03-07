@@ -1,0 +1,225 @@
+:root{
+    --praska: #fdcfb7;
+    --temna: #004358;
+    --zoltenikava:#fcfbd0;
+    --rozefka:#f4828c;
+    --zelenka:#74B9A8;
+
+/*tema 2 */
+    /*--praska: #74B9A8;*/
+    /*--temna: #004358;*/
+    /*--zoltenikava:#fcfbd0;*/
+    /*--rozefka:#004358;*/
+    /*--zelenka:#74B9A8;*/
+
+
+/*.main-color-bg-red-text-black{*/
+    /*background-color: var(--rozefka);*/
+    /*border-color: var(--temna);*/
+    /*color:var(--zoltenikava);*/
+/*}*/
+
+/*body{*/
+    /*background-image:url(../img/IMG_0056.jpg);*/
+    /*background-size: cover;*/
+/*}*/
+
+
+    /*--praska: #BEDB39;*/
+    /*--temna: #004358;*/
+    /*--zoltenikava:#fcfbd0;*/
+    /*--rozefka:#FD7400;*/
+    /*--zelenka:#1F8A70;*/
+}
+
+.navbar {
+    background-color: var(--praska);
+
+}
+.navbar .navbar-brand {
+    color: var(--temna);
+}
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: var(--zoltenikava);
+}
+.navbar .navbar-text {
+    color: var(--temna);
+}
+.navbar .navbar-text a {
+    color: var(--zoltenikava);
+}
+.navbar .navbar-text a:hover,
+.navbar .navbar-text a:focus {
+    color: var(--zoltenikava);
+}
+.navbar .navbar-nav .nav-link {
+    color: var(--temna);
+    border-radius: .25rem;
+    margin: 0 0.25em;
+}
+.navbar .navbar-nav .nav-link:not(.disabled):hover,
+.navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: var(--zoltenikava);
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: var(--zoltenikava);
+    background-color: var(--rozefka);
+}
+.navbar .navbar-toggle {
+    border-color: var(--rozefka);
+}
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+    background-color: var(--rozefka);
+}
+.navbar .navbar-toggle .navbar-toggler-icon {
+    color: var(--temna);
+}
+.navbar .navbar-collapse,
+.navbar .navbar-form {
+    border-color: var(--temna);
+}
+.navbar .navbar-link {
+    color: var(--temna);
+}
+.navbar .navbar-link:hover {
+    color: var(--zoltenikava);
+}
+
+/*
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+/*moi boi*/
+
+/*btn*/
+.main-color-bg{
+    background-color: var(--praska);
+    border-color: var(--temna);
+    color:var(--temna);
+}
+/*NAVBAR*/
+.main-color-bg-dark{
+    background-color: var(--temna);
+    border-color: var(--praska);
+    color:var(--praska);
+}
+/*HEADER*/
+.main-color-bg-green{
+    background-color: var(--zelenka);
+    border-color: var(--praska);
+    color:var(--temna);
+}
+/*SIDENAV*/
+.main-color-bg-red{
+    background-color: var(--rozefka);
+    border-color: var(--temna);
+    color:var(--praska);
+}
+
+.main-color-bg-red-text-black{
+    background-color: var(--rozefka);
+    border-color: var(--temna);
+    color:var(--temna);
+}
+
+.main-color-bg-white{
+    background: white;
+    color:var(--temna);
+    border-color: var(--zelenka);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.neno-header{
+    margin-top:-20px !important;
+    height:70px !important;
+    box-shadow: 15px 15px 25px !important;
+    z-index: 1 !important;
+}
+
+
+/*
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+@media (max-width: 575px) {
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: var(--temna);
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: var(--zoltenikava);
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: var(--zoltenikava);
+        background-color: var(--rozefka);
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: var(--temna);
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: var(--zoltenikava);
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: var(--zoltenikava);
+        background-color: var(--rozefka);
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: var(--temna);
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: var(--zoltenikava);
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: var(--zoltenikava);
+        background-color: var(--rozefka);
+    }
+}
+
+@media (max-width: 1199px) {
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+        color: var(--temna);
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+        color: var(--zoltenikava);
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+        color: var(--zoltenikava);
+        background-color: var(--rozefka);
+    }
+}
+
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: var(--temna);
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: var(--zoltenikava);
+}
+.navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: var(--zoltenikava);
+    background-color: var(--rozefka);
+}
