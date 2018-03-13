@@ -26,10 +26,26 @@
                         <a class="btn main-color-bg-dark d-none" href="index.php">Resend</a>
                         <button type="submit" class="btn main-color-bg-dark forgot-password-hide">Log In</button>
                     </div>
+
                 </form>
             </div>
         </div>
     </div>
+    <?php 
+
+    if(isset($_GET['login']) && $_GET['login'] == 'error'){
+
+     ?>
+
+    <div class="container">
+        
+        Pogresen username ili Password
+
+    </div>
+
+    <?php } ?>
+
+
 </section>
 <?php
     include_once "sys/includes/foot.php";
