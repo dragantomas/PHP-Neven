@@ -70,5 +70,3 @@
         </ol>
     </div>
 </section>
-
-
