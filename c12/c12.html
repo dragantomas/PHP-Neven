@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prakanje podatoci vo baza</title>
+
+	<script 
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">
+	</script>
+
+</head>
+<body>
+	Firstname:
+	<input type="text" name="firstname" id="firstname">
+	<br>
+	Lastname:
+	<input type="text" name="lastname" id="lastname">
+	<br>
+	Email:
+	<input type="text" name="email" id="email">
+	<br>
+	Password:
+	<input type="text" name="password" id="password">
+	<br>
+	<button onclick="klikAjax()">AJAX</button>
+	<br>
+	<hr>
+	Primer PDF
+	<input type="button" onclick="openPDF('_blank')" value="Otvori PDF vo nov tab">
+	<input type="button" onclick="openPDF('_self')" value="Otvori PDF tuka">
+
+<script>
+
+	// $.get
+	// $.post
+	// $.ajax
+
+	function klikAjax(){
+
+	let url = "c12.php";
+
+	const data = {
+			firstname : document.querySelector('#firstname').value,
+			lastname : document.getElementById('lastname').value,
+			email : $('#email').val(),
+			password : $('#password').val()
+		}
+
+	const data2 = {
+			firstname : document.querySelector('#firstname').value,
+			lastname : document.getElementById('lastname').value,
+			email : $('#email').val(),
+			password : $('#password').val(),
+			sleep: true
+		}
+
+	$.ajax({
+		async: true,
+		cache: false,
+		type: 'POST',
+		url: url,
+		dataType: 'html',
+		data: data,
+		success:(data)=>{
+			console.log('Success!')
+		},
+		error: function(data, status){
+			console.log('Error!')
+		},
+		complete:(data, status)=>{
+			console.log('Complete!')
+		}
+
+	});
+
+	$.post(
+		url, data2, successFn(), 'text'
+		);
+	};
+
+	function successFn(){
+		console.log('Raboti')
+	};
+
+	function openPDF(type){
+		window.open("pdf.php", type)
+	};
+	
+</script>
+
+
+</body>
+</html>
