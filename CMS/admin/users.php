@@ -41,46 +41,12 @@
 
                     <?php 
 
-                    $users [] = [
+                    require_once 'general.php';
 
-                        'name' => 'Stavre',
-                        'email' => 'asd@asd.asd',
-                        'joined' => '2017-03-20'
+                    $sql = "select * from users";
+                    $query = $db->query($sql);
+                    $users = $query->fetchAll(PDO::FETCH_ASSOC);
 
-                    ];
-
-                    $users [] = [
-
-                        'name' => 'John',
-                        'email' => '1111asd@asd.asd',
-                        'joined' => '2017-03-20'
-
-                    ];
-
-                     $users [] = [
-
-                        'name' => 'Petko',
-                        'email' => '2222asd@asd.asd',
-                        'joined' => '2017-03-20'
-
-                    ];
-
-
-                    $users [] = [
-
-                        'name' => 'Marfi',
-                        'email' => '3333asd@asd.asd',
-                        'joined' => '2017-03-20'
-
-                    ];
-
-                     $users [] = [
-
-                        'name' => 'Janko',
-                        'email' => '4444asd@asd.asd',
-                        'joined' => '2017-03-20'
-
-                    ];
 
 
 
@@ -93,9 +59,9 @@
                     <table class="table table-striped table-bordered main-color-bg-white text-center">
                         <thead class="main-color-bg-red-text-black">
                             <tr class="">
-                                <th>Name</th>
+                                <th>Firstname Lastname</th>
                                 <th>Email</th>
-                                <th>Joined</th>
+                                <th>Password</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -107,9 +73,9 @@
                             echo "
 
                                <tr>
-                               <td>{$user['name']}</td>
+                               <td>{$user['firstname']} {$user['lastname']}</td>
                                <td>{$user['email']}</td>
-                               <td>{$user['joined']}</td>
+                               <td>{$user['password']}</td>
 
                                </tr>
 

@@ -1,0 +1,10 @@
+{
+
+	"database" : 
+		{
+			"config" : "mysql:host=127.0.0.1;dbname=posts_db",
+			"username" : "root",
+			"password" : ""
+		}
+
+}

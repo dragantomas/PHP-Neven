@@ -54,7 +54,7 @@
                         <a class="dropdown-item" href="" data-toggle="modal" data-target="#exampleModal">Add Page</a>
                         <a class="dropdown-item" href="login.php">Log In</a>
                         <a class="dropdown-item" href="javascript:alert(321);">Add Post</a>
-                        <a class="dropdown-item" onclick="alert(123);" href="javascript:void(0);">Add User</a>
+                        <a class="dropdown-item" href="sys/controllers/add_user.php?action=new">Add User</a>
                     </div>
                 </div>
             </div>
